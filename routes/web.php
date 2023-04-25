@@ -37,7 +37,7 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/blog', [ArticlesController::class, 'index'])->name('blog.index');
-Route::get('/categorie', [ArticlesController::class, 'filtre'])->name('blog.categorie');
+Route::get('/categorie/{id}', [ArticlesController::class, 'filtre'])->name('blog.categorie');
 Route::get('/articles/{article}', [ArticlesController::class, 'show'])->name('articles.show');
 
 

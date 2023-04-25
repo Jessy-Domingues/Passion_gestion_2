@@ -102,12 +102,13 @@ class ArticlesController extends Controller
 
     }
 
-    public function filtre(Articles $article){
+    public function filtre($id){
 
+        $articles = Articles::all()->where('categories_id', $id);
+        return view('blog.categorie', compact('articles'));
         
-        $articles = Articles::where('categories_id', $_GET['categories_id'])->get();
         
 
-return view('blog.categorie', compact('articles'));
+
 }
 }
