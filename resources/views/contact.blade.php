@@ -1,7 +1,7 @@
 <x-app-layout>
     <!-- ====== Contact Section Start -->
     <section class="bg-neutral-100/50 py-20 lg:py-[120px] overflow-hidden relative z-10">
-        <div class="container">
+        <div class="container w-[80%] mx-auto">
             <div class="flex flex-wrap lg:justify-between -mx-4">
                 <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
                     <div class="max-w-[570px] mb-12 lg:mb-0">

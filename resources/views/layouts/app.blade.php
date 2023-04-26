@@ -22,7 +22,7 @@
 
             <!-- Page Heading -->
             
-            <header class="bg-gray-200/75">
+            <header class="bg-gray-200/75 bg-gradient-to-b from-gray-500/25 via-gray-300/50 to-gray-100">
             
 
             @include('layouts.navigation')
@@ -30,7 +30,7 @@
         <div class="h-auto w-4/5 m-auto">
         <nav class="bg-transparent border-gray-200 px-4 lg:px-3 py-2.5 flex flex-wrap justify-between items-end w-full">
         
-                <div class="w-1/12"> FB IG TW
+                <div class="w-1/12 ml-20">
                 </div>
                 <div class="flex items-center lg:order-2">
                     <a href="{{ route('login') }}" class="text-neutral-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 border border-orange-500 transition duration-300 hover:bg-orange-500/90 ">Log in</a>

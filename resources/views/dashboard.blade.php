@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <h1 class="container text-5xl mt-5 text-neutral-800 font-bold">Mes articles</h1>
+    <h1 class="container w-[80%] mx-auto indent-20 text-5xl mt-5 text-neutral-800 font-bold">Mes articles</h1>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             @if (session('success'))
