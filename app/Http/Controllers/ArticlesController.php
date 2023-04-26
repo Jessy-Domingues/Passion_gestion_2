@@ -104,7 +104,7 @@ class ArticlesController extends Controller
 
     public function filtre($id){
 
-        $articles = Articles::all()->where('categories_id', $id);
+        $articles = Articles::all()->where('categories_id', $id)->sortByDesc('created_at');
         return view('blog.categorie', compact('articles'));
         
         

@@ -1,13 +1,13 @@
 <x-app-layout>
     <slot>
 <section class="bg-neutral-100">
-    <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-neutral-700 capitalize mb-20 lg:text-4xl">Bienvenue sur le blog</h1>
+    <div class="container w-[80%] px-6 py-10 mx-auto">
+        <h1 class="text-3xl font-semibold text-neutral-700 capitalize indent-10 mb-20 lg:text-4xl">Bienvenue sur le blog</h1>
 
         @foreach ($articles as $article)
             
-        <div class="mt-8 lg:-mx-6 lg:flex lg:items-start">
-            <img class="object-cover lg:mx-6 max-w-[30%] rounded-xl h-72  drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] lg:h-96" src="{{ asset('/storage/' . $article->image) }}"alt="">
+        <div class="mt-14 lg:-mx-6 lg:flex lg:items-start">
+            <img class="object-cover lg:mx-6 max-w-[30%] rounded-xl h-72  drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] lg:h-80" src="{{ asset('/storage/' . $article->image) }}"alt="">
 
             <div class="mt-6 lg:w-2/3 lg:mt-0 lg:mx-6 pt-10">
                 <a href="{{ route('blog.categorie', $article->categories->id) }}" class="text-sm text-orange-500 uppercase hover:underline">{{ $article->categories->nom }}</a>
