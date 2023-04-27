@@ -24,21 +24,21 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
 
                 @foreach ($articles as $article)
-                    <div class="flex items-center">
+                    <div class="flex items-center flex-wrap">
                     <div style= "background-image: url({{ asset('storage/'.  $article->image) }})" alt="photo_article" class="h-32 w-32 bg-contain bg-no-repeat bg-center"></div>
                     <a href="{{ route('articles.edit', $article) }}" class="rounded-md text-neutral-600 px-5 py-3 my-1 hover:text-orange-500 hover:underline">Editer article <strong>"{{ $article->titre }}"</strong></a>
                     <a href="#" class="rounded-md text-neutral-600 px-5 py-3 my-1 hover:text-red-500 hover:underline" 
                     onclick="event.preventDefault;
                               document.getElementById('destroy-article-form').submit();">Supprimer article <strong>"{{ $article->titre }}"</strong>
-                        <form method="post" action="{{ route('articles.destroy', $article->id) }}"  id="destroy-article-form">
-                        @csrf
-                        @method('delete')
-                        </form>
                     </a>
-
-                    </div>
                     <hr>
                 @endforeach
+                    </div>
+                    
+                    <form method="post" action="{{ route('articles.destroy', $article->id) }}"  id="destroy-article-form">
+                        @csrf
+                        @method('delete')
+                    </form>
 
             </div>
         </div>
