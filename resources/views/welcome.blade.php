@@ -23,9 +23,9 @@
             <!-- Page Heading -->
             
             <header class="h-96">
-            <section class="h-full bg-black">
-                <div class="w-full h-full flex items-center justify-center bg-cover bg-[center_bottom_-8rem] " style="background-image: url('{{ asset('img/CS_2.png') }}');">
-                <h2 class="text-7xl text-white font-bold">LOGO</h2>
+            <section class="h-full bg-gradient-to-b from-black via-gray-300 to-black">
+                <div class="w-full h-full flex items-center justify-center bg-cover bg-[center_bottom_-8rem] " style="background-image: url('{{ asset('img/CS_2.png') }}');">     
+                <img class="h-auto" src="img/LogoTransparent_PG.png" alt="Logo">
                 </div>
             </section>
             

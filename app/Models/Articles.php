@@ -15,7 +15,7 @@ class Articles extends Model
 
     public static function boot(){
         parent::boot();
-
+        
         self::creating(function($article){
             $article->user()->associate(auth()->user()->id);
             $article->categories()->associate(request()->categorie);
