@@ -17,14 +17,14 @@
     <x-text-input class="w-1/2 focus:outline-orange-500" id="titre" name="titre"/>
 
     <x-input-label for="contenu" value="Contenu de l'article" class="mt-3"/>
-    <textarea class="w-1/2 h-36 focus:outline-none focus:ring-orange-500" name="contenu" id="contenu"></textarea>
+    <textarea class="w-full whitespace-pre-wrap h-36 focus:outline-none focus:ring-orange-500" name="contenu" id="contenu"></textarea>
 
     <x-input-label for="image" value="Image de l'article"/>
     <x-text-input id="image" name="image" type="file"/>
 
     <x-input-label for="categorie" value="Categorie de l'article" class="mt-3"/>
 
-    <select class="w-1/2" name="categorie" id="categorie">
+    <select class="w-1/3" name="categorie" id="categorie">
         @foreach ($categories as $categorie)
 
             <option class="checked:bg-neutral-200 hover:bg-orange-500" value="{{ $categorie->id }}">{{ $categorie->nom }}</option>

@@ -16,7 +16,9 @@ class ArticlesController extends Controller
     public function index()
     {
         $articles = Articles::with('categories','user')->latest()->simplePaginate(10);
-        return view('blog.index', compact('articles'));
+        $dern = Articles::latest()->first();
+        $secDern = Articles::latest()->offset(1)->first();
+        return view('blog.index', compact('articles','dern', 'secDern'));
     }
 
     /**
@@ -33,7 +35,7 @@ class ArticlesController extends Controller
      */
     public function store(StoreArticlesRequest $request)
     {
-        $imageName = $request->image->store('articles');
+        $imageName = $request->image->store('articles','public');
         Articles::create([
             'titre' => $request->titre,
             'contenu' => $request->contenu,
@@ -107,8 +109,5 @@ class ArticlesController extends Controller
         $articles = Articles::all()->where('categories_id', $id)->sortByDesc('created_at');
         return view('blog.categorie', compact('articles'));
         
-        
-
-
 }
 }

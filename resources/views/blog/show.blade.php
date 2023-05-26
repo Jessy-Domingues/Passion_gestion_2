@@ -7,7 +7,7 @@
             <img class="w-9/12 rounded-xl mx-auto" src="{{ asset('/storage/' . $article->image) }}" alt="Photo de l'article">
 
         <div class="text-stone-500 indent-10 text-start mt-10">
-        {{ $article->contenu }}
+        <p class="whitespace-pre-wrap">{{ $article->contenu }}</p>
         </div>
 
         </div>

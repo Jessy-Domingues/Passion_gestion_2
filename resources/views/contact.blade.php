@@ -6,7 +6,7 @@
                 <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
                     <div class="max-w-[570px] mb-12 lg:mb-0">
                         <span class="block mb-4 text-base text-orange-500 font-semibold">
-                            Contactez nous
+                            Contactez-nous
                         </span>
                         <h2 class="
                   text-neutral-700
@@ -18,17 +18,19 @@
                   lg:text-[36px]
                   xl:text-[40px]
                   ">
-                            GET IN TOUCH WITH US
+                            Des questions?
                         </h2>
                         <p class="text-base text-body-color leading-relaxed mb-9">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eius tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            adiqua minim veniam quis nostrud exercitation ullamco
+                        Avez-vous des questions sur les jeux vidéos de gestion ?<br> 
+                        Besoin d'aide pour comprendre certaines mécaniques de jeu ?<br>  
+                        Nous sommes là pour vous !<br><br>  
+                        N'hésitez pas à nous contacter via notre formulaire de contact ci-contre et notre équipe se fera un plaisir de répondre à toutes vos interrogations.
+                        <br><br>Ne restez pas dans l'incertitude et laissez-nous vous guider vers la victoire !
                         </p>
 
                     </div>
                 </div>
-                <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
+                <div class="w-2/3 drop-shadow-2xl lg:w-1/2 xl:w-6/12 px-4">
                     <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                         @if(Session::has('success'))
                         <div class="alert alert-success text-green-500">
@@ -95,18 +97,18 @@
                         focus:border-orange-500
                         " name="message"></textarea>
                             </div>
-                            <div>
+                            <div class="flex justify-center">
                                 <button type="submit" class="
-                        w-full
+                        w-auto 
                         text-neutral-800 font-semibold
                         bg-transparent
                         rounded
                         border border-orange-500
-                        p-3
+                        py-2 px-3
                         transition duration-300
                         hover:bg-orange-500/90
                         ">
-                                    Envoyer le message
+                                    Envoyer
                                 </button>
                             </div>
                         </form>

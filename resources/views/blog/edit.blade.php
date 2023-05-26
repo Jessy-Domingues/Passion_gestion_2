@@ -17,7 +17,7 @@
     <x-text-input class="w-1/2 focus:outline-orange-500" id="titre" name="titre" value="{{ $article->titre }}"/>
 
     <x-input-label for="contenu" value="Contenu de l'article" class="mt-3"/>
-    <textarea class="w-1/2 h-36 focus:outline-none focus:ring-orange-500" name="contenu" id="contenu">{{ $article->contenu }}</textarea>
+    <textarea class="whitespace-pre-wrap w-full h-36 focus:outline-none focus:ring-orange-500" name="contenu" id="contenu">{{ $article->contenu }}</textarea>
 
     <x-input-label for="image" value="Image de l'article"/>
     <x-text-input id="image" name="image" type="file"/>

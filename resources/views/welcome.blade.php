@@ -16,16 +16,16 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-Karla">
         <div class="min-h-screen bg-gray-100">
             
 
             <!-- Page Heading -->
             
-            <header class="h-96">
-            <section class="h-full bg-gradient-to-b from-black via-gray-300 to-black">
+            <header class="h-80">
+            <section class="h-full bg-gradient-to-b from-black via-neutral-700 to-gray-400">
                 <div class="w-full h-full flex items-center justify-center bg-cover bg-[center_bottom_-8rem] " style="background-image: url('{{ asset('img/CS_2.png') }}');">     
-                <img class="h-auto" src="img/LogoTransparent_PG.png" alt="Logo">
+                <img class="h-auto" src="img/LT_PG.png" alt="Logo">
                 </div>
             </section>
             
@@ -33,11 +33,11 @@
              @guest
         <nav class="bg-blue-950 border-gray-200 px-4 lg:px-6 py-2.5 flex flex-wrap justify-between items-center w-full">
         
-                <div class="w-1/12">
+                <div class="w-2/12">
                 </div>
                 <div class="flex items-center lg:order-2">
-                    <a href="{{ route('login') }}" class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
-                    <a href="{{ route('register') }}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get started</a>
+                    <a href="{{ route('login') }}" class="font-bold text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 rounded-lg text-sm px-5 py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a>
+                    <a href="{{ route('register') }}" class="font-bold text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get started</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -51,13 +51,13 @@
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li class="font-medium text-sm p-3 hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-red">
-                            <a href="{{ route('home')}}" class="dark:text-white">Accueil</a>
+                            <a href="{{ route('home')}}" class="font-bold text-base dark:text-white">Accueil</a>
                         </li>
                         <li class="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-                            <a href="{{ route('blog.index')}}" class="dark:text-white">Blog</a>
+                            <a href="{{ route('blog.index')}}" class="font-bold text-base dark:text-white">Blog</a>
                         </li>
                         <li class="font-medium text-sm p-3 cursor-pointer hover:bg-slate-300 dark:hover:bg-slate-800 sm:p-0 sm:hover:bg-transparent text-gray-600 hover:text-primary transition-colors">
-                            <a href="{{ route('contact.index') }}" class="dark:text-white">Contact</a>
+                            <a href="{{ route('contact.index') }}" class="font-bold text-base dark:text-white">Contact</a>
                         </li>
                     </ul>
                 </div>

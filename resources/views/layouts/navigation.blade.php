@@ -1,17 +1,17 @@
 @auth
 <nav class="bg-transparent border-gray-200 px-4 lg:px-6 py-2.5 flex flex-wrap justify-between items-center w-full">
     <!-- Primary Navigation Menu -->
-    <div class="w-9/12 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-10/12 mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                        <img class="h-full w-3/4" src="../../img/Logorange2.png" alt="Logo">
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
+                <!-- Menu des articles -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" >
                         {{ __('Menu des articles') }}
@@ -22,6 +22,13 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('articles.create')" :active="request()->routeIs('articles.create')" class="active:underline-orange-500">
                         {{ __('Créer un article') }}
+                    </x-nav-link>
+                </div>
+
+                <!-- Volet consultation blog -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('blog.index')" :active="request()->routeIs('blog.index')" class="active:underline-orange-500">
+                        {{ __('Aperçu du blog') }}
                     </x-nav-link>
                 </div>
             </div>
