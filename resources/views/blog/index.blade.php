@@ -46,7 +46,7 @@
                     <img class="object-cover lg:mx-6 min-w-[25%] max-w-[25%] rounded-xl h-72  drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] lg:h-80" src="{{ asset('/storage/' . $article->image) }}" alt="photo article">
 
                     <div class="mt-6 lg:w-2/3 lg:mt-0 lg:mx-6 pt-10">
-                        <a href="{{ route('blog.categorie', $article->categories->id) }}" class="text-sm text-orange-500 uppercase hover:underline">{{ $article->categories->nom }}</a>
+                        <a href="{{ route('blog.categorie', $article->categories->id) }}" class="text-lg text-orange-500 uppercase hover:underline">{{ $article->categories->nom }}</a>
 
                         <a href="{{ route('articles.show', $article) }}" class="block mt-2 text-2xl font-semibold text-neutral-700 hover:underline md:text-3xl">
                             {{ $article->titre }}

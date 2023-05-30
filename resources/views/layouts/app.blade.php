@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+    <link rel="icon" type="image/x-icon" href="../../img/fav.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script>
@@ -147,6 +148,52 @@
             {{ $slot }}
         </main>
     </div>
+    <footer class="p-4 sm:p-6 bg-gray-200/75 bg-gradient-to-t from-gray-500/25 via-gray-300/50 to-gray-100">
+        <div class="mx-auto max-w-screen-xl">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                <a href="{{ route('home') }}">
+                    <img class="h-[60%] w-auto" src="../img/Logorange2.png" alt="Logo">
+                </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-neutral-700 uppercase">Pages</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="{{ route('blog.index')}}" class="hover:underline">Voir le blog</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('contact.index') }}" class="hover:underline">Page contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-neutral-700 uppercase">Mon compte</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="{{ route('login') }}" class="hover:underline ">Se connecter</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('register') }}" class="hover:underline">S'enregistrer</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-neutral-700 uppercase">Aspect legal</h2>
+                        <ul class="text-gray-600 dark:text-gray-400">
+                            <li class="mb-4">
+                                <a href="#" class=" text-xs hover:underline">Politique de confidentialité</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-xs hover:underline">Mentions légales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

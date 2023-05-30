@@ -19,7 +19,7 @@ class ArticlesFactory extends Factory
         return [
             'titre' => $this->faker->sentence(rand(5, 10), true),
             'contenu' => $this->faker->paragraphs(rand(3, 5), true),
-            'image' => 'https://via.placeholder.com/400',
+            'image' => asset('articles\GUpVwMxRkKDRueUghLsBuMcl3fNeKkvsuwGyp2GQ.png'),
         ];
     }
 }
