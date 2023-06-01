@@ -1,7 +1,7 @@
 <x-app-layout>
 
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-    <h2 class="text-3xl font-semibold text-stone-700 indent-20 lg:text-4xl text-start my-10">Création d'un article</h2>
+    <h2 class="text-3xl max-md:text-center font-semibold text-stone-700 md:indent-20 lg:text-4xl text-start my-10">Création d'un article</h2>
 
     <div class="my-5">
         @foreach ($errors->all() as $error)

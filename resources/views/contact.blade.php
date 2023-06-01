@@ -4,7 +4,7 @@
         <div class="container w-[80%] mx-auto">
             <div class="flex flex-wrap lg:justify-between -mx-4">
                 <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
-                    <div class="max-w-[570px] mb-12 lg:mb-0">
+                    <div class="text-center lg:text-start mb-12 lg:mb-0">
                         <span class="block mb-4 text-base text-orange-500 font-semibold">
                             Contactez-nous
                         </span>
@@ -30,7 +30,7 @@
 
                     </div>
                 </div>
-                <div class="w-2/3 drop-shadow-2xl lg:w-1/2 xl:w-6/12 px-4">
+                <div class="max-lg:w-full w-2/3 drop-shadow-2xl lg:w-1/2 xl:w-6/12 px-4">
                     <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
                         @if(Session::has('success'))
                         <div class="alert alert-success text-green-500">

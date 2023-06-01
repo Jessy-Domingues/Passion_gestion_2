@@ -6,6 +6,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PolController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,7 @@ require __DIR__.'/auth.php';
 Route::get('/blog', [ArticlesController::class, 'index'])->name('blog.index');
 Route::get('/categorie/{id}', [ArticlesController::class, 'filtre'])->name('blog.categorie');
 Route::get('/articles/{article}', [ArticlesController::class, 'show'])->name('articles.show');
+Route::view('/pol', 'politique');
 
 
 
