@@ -40,7 +40,8 @@ require __DIR__.'/auth.php';
 Route::get('/blog', [ArticlesController::class, 'index'])->name('blog.index');
 Route::get('/categorie/{id}', [ArticlesController::class, 'filtre'])->name('blog.categorie');
 Route::get('/articles/{article}', [ArticlesController::class, 'show'])->name('articles.show');
-Route::view('/pol', 'politique');
+Route::get('/pol', [PolController::class, 'pol'])->name('politique');
+Route::get('/mentions', [PolController::class, 'ml'])->name('mentions');
 
 
 

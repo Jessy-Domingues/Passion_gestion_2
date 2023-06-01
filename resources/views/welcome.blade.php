@@ -201,7 +201,7 @@
                                     <a href="{{ route('politique') }}" class=" text-xs hover:underline">Politique de confidentialité</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-xs hover:underline">Mentions légales</a>
+                                    <a href="{{ route('mentions') }}" class="text-xs hover:underline">Mentions légales</a>
                                 </li>
                             </ul>
                         </div>

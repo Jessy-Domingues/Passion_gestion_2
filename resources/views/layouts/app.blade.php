@@ -214,10 +214,10 @@ function Fun() {
                             <h2 class="mb-6 text-sm font-semibold text-neutral-700 uppercase">Aspect legal</h2>
                             <ul class="text-gray-600 dark:text-gray-400">
                                 <li class="mb-4">
-                                    <a href="#" class=" text-xs hover:underline">Politique de confidentialité</a>
+                                    <a href="{{ route('politique') }}" class=" text-xs hover:underline">Politique de confidentialité</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="text-xs hover:underline">Mentions légales</a>
+                                    <a href="{{ route('mentions') }}" class="text-xs hover:underline">Mentions légales</a>
                                 </li>
                             </ul>
                         </div>

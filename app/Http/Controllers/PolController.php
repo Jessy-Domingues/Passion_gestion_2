@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class PolController extends Controller
 {
-    public function politique(){
+    public function pol(){
         return view('politique');
+    }
+    public function ml(){
+        return view('mentions');
     }
 }
