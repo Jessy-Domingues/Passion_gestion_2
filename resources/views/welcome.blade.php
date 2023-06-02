@@ -168,7 +168,7 @@
                 <div class="md:flex md:justify-between md:flex-row flex flex-col justify-center">
                     <div class="mb-6 md:mb-0">
                         <a href="{{ route('home') }}">
-                            <img class="h-[60%] md:max-lg:h-[50%] w-auto m-auto" src="../img/Logorange2.png" alt="Logo">
+                            <img class="h-[50%] md:max-lg:h-[50%] w-auto m-auto" src="../img/Logorange2.png" alt="Logo">
                         </a>
                     </div>
                     <div class="xl:w-2/5 md:max-xl:w-1/2 w-full flex md:flex-row flex-col items-center md:justify-between">
