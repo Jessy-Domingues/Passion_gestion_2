@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-    <link rel="icon" type="image/x-icon" href="../../img/fav.png">
+    <link rel="icon" type="image/x-icon" href="{{ asset('fav.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script>
@@ -122,9 +122,6 @@ function Fun() {
 <body class="font-Karla">
     <div class="min-h-screen bg-gray-100">
 
-
-        <!-- Page Heading -->
-
         <header class="bg-gray-200/75 bg-gradient-to-b from-gray-500/25 via-gray-300/50 to-gray-100">
 
             
@@ -134,7 +131,7 @@ function Fun() {
                 <nav class="bg-transparent border-gray-200 px-4 lg:px-3 py-6 flex flex-wrap justify-between items-center w-full">
 
                     <div class="w-10/12 max-sm:m-auto sm:w-3/12 md:w-3/12 lg:w-2/12 lg:ml-20">
-                    <a href="{{ route('home') }}"><img class="h-full w-auto m-auto" src="../img/Logorange2.png" alt="Logo"></a>
+                    <a href="{{ route('home') }}"><img class="h-full w-auto m-auto" src="{{ asset('Logorange2.png') }}" alt="Logo"></a>
                     </div>
                     <button onclick="myFunction()" data-collapse-toggle="mobile-menu-2" type="button" class="order-1 sm:order-2 w-1/12 sm:w-3/12 inline-flex justify-center items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-transparent dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                             <span class="sr-only">Ouvrir Menu</span>
@@ -173,18 +170,18 @@ function Fun() {
 
         </header>
 
-
-        <!-- Page Content -->
+        <!-- Contenu -->
         <main>
             {{ $slot }}
         </main>
     </div>
+
     <footer class="p-4 sm:p-6 bg-gray-200/75 bg-gradient-to-t from-gray-500/25 via-gray-300/50 to-gray-100">
             <div class="mx-auto max-w-screen-xl">
                 <div class="md:flex md:justify-between md:flex-row flex flex-col justify-center">
                     <div class="mb-6 md:mb-0">
                         <a href="{{ route('home') }}">
-                            <img class="h-[50%] md:max-lg:h-[50%] w-auto m-auto" src="../../img/Logorange2.png" alt="Logo">
+                            <img class="h-[50%] md:max-lg:h-[50%] w-auto m-auto" src="{{ asset('Logorange2.png') }}" alt="Logo">
                         </a>
                     </div>
                     <div class="xl:w-2/5 md:max-xl:w-1/2 w-full flex md:flex-row flex-col items-center md:justify-between">
@@ -224,7 +221,7 @@ function Fun() {
                     </div>
                 </div>
             </div>
-        </footer>
+    </footer>
 </body>
 
 </html>

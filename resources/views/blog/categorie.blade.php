@@ -6,7 +6,7 @@
     @foreach ($articles as $article)
         
     <div class="mt-14 lg:-mx-6 lg:flex lg:items-start">
-            <img class="object-cover lg:mx-6 lg:w-1/3 max-w-[25%] rounded-xl h-72  drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] lg:h-80" src="{{ asset('/storage/' . $article->image) }}"alt="photo article">
+            <img class="object-cover lg:mx-6 lg:w-1/3 max-w-[25%] rounded-xl h-72  drop-shadow-[5px_5px_20px_rgba(0,0,0,0.25)] lg:h-80" src="{{ asset($article->image) }}"alt="photo article">
 
             <div class="mt-6 lg:w-2/3 lg:mt-0 lg:mx-6 pt-10">
                 <a href="{{ route('blog.categorie', $article->categories->id) }}" class="text-sm text-orange-500 uppercase hover:underline">{{ $article->categories->nom }}</a>

@@ -7,6 +7,7 @@ use App\Models\Categories;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use App\Http\Requests\StoreArticlesRequest;
+use Illuminate\Database\DBAL\TimestampType;
 
 class ArticlesController extends Controller
 {
@@ -35,7 +36,8 @@ class ArticlesController extends Controller
      */
     public function store(StoreArticlesRequest $request)
     {
-        $imageName = $request->image->store('articles','public');
+        $imageName = $request->file('image')->getClientOriginalName();
+        $image = $request->image->storeAs('img',$imageName, 'public');
         Articles::create([
             'titre' => $request->titre,
             'contenu' => $request->contenu,

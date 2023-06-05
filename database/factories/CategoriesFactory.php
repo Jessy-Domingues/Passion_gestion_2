@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class CategoriesFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Statut du modèle.
      *
      * @return array<string, mixed>
      */

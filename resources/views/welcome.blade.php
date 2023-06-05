@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
-    <link rel="icon" type="image/x-icon" href="img/fav.png">
+    <link rel="icon" type="image/x-icon" href="{{ asset('fav.png') }}">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Scripts -->
@@ -25,8 +25,8 @@
         <header class="h-auto">
             <!-- Hero -->
             <section class="h-full bg-gradient-to-b from-neutral-700 via-gray-200 to-black">
-                <div class="w-full py-12 h-full flex items-center flex-col justify-center bg-cover bg-center lg:bg-[center_bottom_-8rem] " style="background-image: url('{{ asset('img/CS_2.png') }}');">
-                    <img class="h-auto" src="img/LT_PG.png" alt="Logo">
+                <div class="w-full py-12 h-full flex items-center flex-col justify-center bg-cover bg-center lg:bg-[center_bottom_-8rem] " style="background-image: url('{{ asset('CS_2.png') }}');">
+                    <img class="h-auto" src="{{ asset('LT_pG.png') }}" alt="Logo">
                     <p class="text-xl font-bold text-neutral-300">Construire, gérer, rêver</p>
                 </div>
             </section>
@@ -68,7 +68,7 @@
                         Ce site s'adresse aussi à ceux qui n'y connaissent pas grand chose en terme de jeux de gestion et qui souhaite en découvrir d'avantage.</p>
                 </div>
                 <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                    <img class="rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)]" src="img/Farthest.jpg" alt="image farthest frontier">
+                    <img class="rounded-xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)]" src="{{ asset('Farthest.jpg') }}" alt="image farthest frontier">
                 </div>
                 <a href="{{ route('blog.index') }}" class="lg:col-start-1 lg:col-span-2 col-span-2 col-start-3 font-bold text-neutral-800 bg-orange-500/90 border border-orange-500 transition duration-300 hover:bg-transparent focus:ring-4 rounded-lg text-sm text-center px-2.5 py-2.5">
                     Voir nos derniers articles
@@ -120,7 +120,7 @@
 
                         En plus de la gestion des ressources, les jeux de gestion mettent souvent l'accent sur d'autres aspects tels que la résolution de problèmes, la créativité, la satisfaction des clients ou des citoyens, la recherche et le développement de nouvelles technologies, et la gestion des risques.
                     </p>
-                    <p class="text-lg text-center font-bold col-start-2 col-span-4 text-gray-500">
+                    <p class="text-lg text-center font-bold sm:col-start-2 max-sm:col-span-6 col-span-4 text-gray-500">
                         Les jeux de gestion offrent aux joueurs une expérience immersive et stimulante, où ils peuvent développer leurs compétences en gestion, faire preuve de créativité et relever des défis stratégiques. Que tu cherches à construire et à gérer ta propre ville, à diriger une entreprise prospère ou à développer un empire virtuel, les jeux de gestion offrent une expérience captivante et gratifiante.
                     </p>
                 </div>
@@ -133,7 +133,7 @@
             <artcile>
                 <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div class="font-light text-gray-500 mb-16 sm:text-lg text-center lg:text-start dark:text-gray-400">
-                        <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">Découvrez notre blog</h2>
+                        <h2 class="mb-4 text-4xl font-extrabold text-white">Découvrez notre blog</h2>
                         <p class="mb-4">
                             Que vous cherchiez des astuces pour améliorer vos compétences de gestionnaire, des avis sur les derniers jeux de gestion à ne pas manquer, ou des réflexions approfondies sur l'industrie du jeu, notre blog est votre source. Rejoignez-nous et laissez-vous inspirer par nos contenus captivants.
                         </p>
@@ -142,8 +142,8 @@
                         </a>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mt-8">
-                        <img class="w-full rounded-lg" src="img/Cities Skylines 2.png" alt="image blog 1">
-                        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="img/PlanetZoo_4.jpg" alt="image blog 2">
+                        <img class="w-full rounded-lg" src="{{ asset('Cities Skylines 2.png') }}" alt="image blog 1">
+                        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{{ asset('PlanetZoo_4.jpg') }}" alt="image blog 2">
                     </div>
                 </div>
                 </article>
@@ -152,7 +152,7 @@
                 <article>
                     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                         <div class="mx-auto max-w-screen-sm text-center">
-                            <h2 class="mb-4 text-4xl font-extrabold leading-tight text-gray-900 dark:text-white">Des questions à nous poser?</h2>
+                            <h2 class="mb-4 text-4xl font-extrabold leading-tight text-white">Des questions à nous poser?</h2>
                             <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Vous avez des questions, des suggestions ou simplement envie de nous contacter ? Nous serions ravis d'entendre parler de vous ! Utilisez le formulaire dans la rubrique contact pour nous envoyer un message directement.</p>
                             <a href="{{ route('contact.index') }}" class="col-start-2 lg:col-span-2 font-bold text-neutral-800 bg-orange-500/90 border border-orange-500 transition duration-300 hover:text-orange-500 hover:bg-transparent focus:ring-4 rounded-lg text-base text-center px-5 py-2.5">
                                 Rubrique contact
@@ -168,7 +168,7 @@
                 <div class="md:flex md:justify-between md:flex-row flex flex-col justify-center">
                     <div class="mb-6 md:mb-0">
                         <a href="{{ route('home') }}">
-                            <img class="h-[50%] md:max-lg:h-[50%] w-auto m-auto" src="../img/Logorange2.png" alt="Logo">
+                            <img class="h-[50%] md:max-lg:h-[50%] w-auto m-auto" src="{{ asset('Logorange2.png') }}" alt="Logo">
                         </a>
                     </div>
                     <div class="xl:w-2/5 md:max-xl:w-1/2 w-full flex md:flex-row flex-col items-center md:justify-between">

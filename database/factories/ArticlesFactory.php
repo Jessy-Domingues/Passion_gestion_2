@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class ArticlesFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Statut du modèle.
      *
      * @return array<string, mixed>
      */

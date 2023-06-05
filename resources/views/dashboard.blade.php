@@ -28,7 +28,7 @@
                 @foreach ($articles as $article)
                 
                     <div class="flex items-center max-lg:justify-center flex-wrap">
-                    <div style= "background-image: url({{ asset('storage/'.  $article->image) }})" alt="photo_article" class="h-32 w-32 bg-contain bg-no-repeat bg-center"></div>
+                    <div style= "background-image: url({{ asset($article->image) }})" alt="photo_article" class="h-32 w-32 bg-contain bg-no-repeat bg-center"></div>
                     <a href="{{ route('articles.edit', $article) }}" class="rounded-md max-sm:text-center text-neutral-600 px-5 py-3 my-1 hover:text-orange-500 hover:underline">Editer article <strong>"{{ Str::limit($article->titre, 30) }}"</strong></a>
                     <a href="#" class="rounded-md text-neutral-600 px-5 py-3 my-1 max-sm:text-center hover:text-red-500 hover:underline" 
                     onclick="event.preventDefault;
